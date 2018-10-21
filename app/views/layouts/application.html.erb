@@ -6,9 +6,12 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-large">
+      <%= yield %>
+    </div>
   </body>
 </html>

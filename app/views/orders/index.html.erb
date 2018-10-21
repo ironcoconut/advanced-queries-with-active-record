@@ -3,15 +3,7 @@
     <p id="notice"><%= notice %></p>
   </div>
   <div class="col">
-    <p>
-      <strong>Name:</strong>
-      <%= @account.name %>
-    </p>
-  </div>
-  <div class="col">
-    <p>
-      <strong>Orders:</strong>
-    </p>
+    <h1>Orders</h1>
   </div>
   <div class="col">
     <table>
@@ -20,20 +12,23 @@
           <th>Date</th>
           <th>Amount</th>
           <th>Status</th>
+          <th>Account</th>
           <th colspan="1"></th>
         </tr>
       </thead>
       <tbody>
-        <% @account.orders.each do |order| %>
+        <% @orders.each do |order| %>
           <tr>
             <td><%= order.date %></td>
             <td><%= number_to_currency order.amount %></td>
             <td><%= order.status %></td>
+            <td>
+              <%= link_to order.account.name, order.account %>
+            </td>
             <td><%= link_to 'Show', order %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
-    <%= link_to 'All Accounts', accounts_path %>
   </div>
 </div>
