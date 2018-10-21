@@ -11,6 +11,9 @@ A quick overview on using active record to perform more advanced queries. The sl
 1. `git clone git@github.com:ironcoconut/advanced-queries-with-active-record.git`
 2. `bundle install`
 3. `bundle run rails ./scripts/generate-mock-data.rb`
+4. Add a user account via the console so you can login.
+  a. `bundle exec rails c`
+  b. `User.create!(email: "email", password: "password")`
 4. `bundle exec puma`
 
 ## Additional Resources
