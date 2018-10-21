@@ -1,24 +1,20 @@
-# README
+# Advanced Queries with Active Record
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+___or how I learned to love Rails' default ORM___
 
-Things you may want to cover:
+## Introduction
 
-* Ruby version
+A quick overview on using active record to perform more advanced queries. The slides also include considering whether or not implementing these examples in production are a good idea or whether a 3rd party BI tool like Apache Superset should be used instead.
 
-* System dependencies
+## Getting Started
 
-* Configuration
+1. `git clone git@github.com:ironcoconut/advanced-queries-with-active-record.git`
+2. `bundle install`
+3. `bundle run rails ./scripts/generate-mock-data.rb`
+4. `bundle exec puma`
 
-* Database creation
+## Additional Resources
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Visit this project on Heroku](#)
+- [View a database mockup with a sample join table and pivot tables that answer each question](https://docs.google.com/spreadsheets/d/1XkSZ-Amcts_Q0vBu8lZVwMG7BP9h5SPhz-ezwOjtfBA/edit?usp=sharing)
+- [View the Slides](https://docs.google.com/presentation/d/1nQhQb5UpnLCT3TKcz-LMMKeScWPfxcCUsj5lBoo0HC8/edit?usp=sharing)
